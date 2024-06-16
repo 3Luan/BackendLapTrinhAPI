@@ -1,11 +1,11 @@
 const express = require("express");
-const initRoutes = require("./src/routes/initRoutes");
-const connectDB = require("./src/config/database");
+const initRoutes = require("./routes/initRoutes");
+const connectDB = require("./config/database");
 const cookieParser = require("cookie-parser");
 require("dotenv").config();
 const app = express();
 const cors = require("cors");
-require("./src/config/passport");
+require("./config/passport");
 
 // Cấu hình các tệp tĩnh từ thư mục uploads
 app.use(express.static("uploads/images"));
